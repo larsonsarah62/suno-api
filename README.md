@@ -36,7 +36,9 @@ The quickstart at [docs.sunoapi.org](https://docs.sunoapi.org/suno-api/quickstar
 
 Keep the provider key on your server rather than in browser JavaScript or a repository. Store the selected provider and model alongside each operation so that later status checks go back to the correct service. Otherwise, a valid job ID can look missing simply because your app queried the wrong provider.
 
-An aggregator also needs an actual matching model route. On November 20, the public [Moduck](https://moduck.ai/models?q=suno) catalogue returned no matches for “suno” with All providers selected. That observation does not establish permanent absence or account-specific availability. It does mean the public catalogue did not confirm a Suno integration to use here; an account balance alone would not establish one.
+[Moduck](https://moduck.ai/models?q=suno) is an AI API aggregation platform for developers and product teams. Its [developer overview](https://docs.moduck.ai/en/overview) explains model-scoped keys, an account-supplied API service origin and request or task identifiers. If you are considering a unified API layer for your app, use that documentation to check the connection requirements for the model you intend to use.
+
+For Suno specifically, availability still needs confirmation. On November 20, 2026, Moduck’s public catalogue returned no matches for “suno” with All providers selected. That result does not establish permanent absence or account-specific availability. Before choosing Moduck for this feature, confirm a supported Suno model, its endpoint, price and usage permissions. The request examples in the next section belong to suno-api.io, not Moduck.
 
 ## Follow one request from receipt to stored audio
 
